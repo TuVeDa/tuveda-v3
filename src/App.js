@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// import Blog from './components/Blog';
-// import Landing from './components/Landing';
+import Landing from './components/Landing';
+
 import './App.css';
 
 class App extends Component {
@@ -16,6 +16,10 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar/>
+
+        <div className="content">
+          <Landing />
+        </div>
 
         <Footer />
       </div>
