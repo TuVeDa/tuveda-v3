@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = {};
-  };
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {};
+  // };
 
   render() {
     return (
@@ -24,7 +24,7 @@ class Navbar extends Component {
           {/* Collect the nav links, forms, and other content for toggling */}
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" className="words">Blog</a></li>
             </ul>
           </div>{/* /.navbar-collapse */}
         </div>

@@ -10,15 +10,15 @@
 }
 
 .footer {
-  background: #3F37DD;
-  color: #EDB438;
+  background: grey;
+  color: black;
 }
 
 .navbar {
-  background: #3F37DD;
+  background: grey;
 
 }
 
 .navbar  a{
-  color: #EDB438 !important;
+  color: black !important;
 }
