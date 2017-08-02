@@ -1,5 +1,18 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.content {
+  flex: 1; }
+
+.footer {
+  background: grey;
+  color: black; }
+
+.navbar {
+  background: grey; }
+
+.navbar a {
+  color: black !important; }
