@@ -8,11 +8,74 @@
   flex: 1; }
 
 .footer {
-  background: grey;
-  color: black; }
+  background: #3C3E44;
+  color: #FFF; }
 
 .navbar {
-  background: grey; }
+  background: #3C3E44; }
+  .navbar a {
+    color: #FFF !important; }
+  .navbar.navbar-default {
+    margin-bottom: 0; }
 
-.navbar a {
-  color: black !important; }
+.std-land-section {
+  padding: 1em 0;
+  border: 2px dotted #000; }
+
+.std-land-sect {
+  height: 35em;
+  border: 2px dotted #000; }
+
+.land-title {
+  margin: .5em 0 1em 0;
+  font-size: 1.825em;
+  color: #000; }
+
+#banner {
+  background-color: #D1D1D1;
+  position: relative; }
+  #banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+.sub-mission-title {
+  font-size: 1.5em; }
+
+.sub-mission-pic {
+  width: 15em;
+  height: 15em; }
+
+.sub-mission-desc {
+  font-size: 1em;
+  margin-top: 1em; }
+
+#contact-form {
+  background-color: #D1D1D1; }
+
+.project {
+  margin-top: 2em; }
+
+.project-title {
+  font-size: 1.5em;
+  margin-top: 1em; }
+
+.project-pic {
+  width: 20em;
+  height: 20em; }
+
+#blog-preview {
+  background-color: #D1D1D1; }
+
+.team-title {
+  font-size: 1.5em; }
+
+.team-pic {
+  width: 15em;
+  height: 15em; }
+
+.team-desc {
+  font-size: 1em;
+  margin: 1em 0; }

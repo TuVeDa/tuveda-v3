@@ -8,7 +8,24 @@ class ProjectPreview extends Component {
 
   render() {
     return (
-      <p>PROJECT PREVIEW</p>
+      <div className="std-land-section">
+        <h3 className='land-title'>PROJECTS</h3>
+
+        <div className='row'>
+          <div className='project col-sm-4'>
+            <img className='project-pic' src='img/grey-placeholder.png' alt='sub-mission-1'/>
+            <p className='project-title'>PROJECT</p>
+          </div>
+          <div className='project col-sm-4'>
+            <img className='project-pic' src='img/grey-placeholder.png' alt='sub-mission-1'/>
+            <p className='project-title'>PROJECT</p>
+          </div>
+          <div className='project col-sm-4'>
+            <img className='project-pic' src='img/grey-placeholder.png' alt='sub-mission-1'/>
+            <p className='project-title'>PROJECT</p>
+          </div>
+        </div>
+      </div>
     )
   }
 }

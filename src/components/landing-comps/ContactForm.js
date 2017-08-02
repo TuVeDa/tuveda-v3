@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Banner extends Component {
+class ContactForm extends Component {
   // constructor(props) {
   //   super(props);
   //   this.state = {};
@@ -8,11 +8,11 @@ class Banner extends Component {
 
   render() {
     return (
-      <div className="std-land-sect" id="banner">
-        <h1>TUVEDA</h1>
+      <div className="std-land-sect" id="contact-form">
+        <h3 className='land-title'>CONTACT FORM</h3>
       </div>
     )
   }
 }
 
-export default Banner;
+export default ContactForm;

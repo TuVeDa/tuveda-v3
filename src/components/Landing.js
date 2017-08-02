@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Banner from './landing-comps/Banner';
 import BlogPreview from './landing-comps/BlogPreview';
-import ContactPage from './landing-comps/ContactPage';
+import ContactForm from './landing-comps/ContactForm';
 import Mission from './landing-comps/Mission';
 import ProjectPreview from './landing-comps/ProjectPreview';
 import Team from './landing-comps/Team';
@@ -18,7 +18,7 @@ class Landing extends Component {
       <div>
         <Banner />
         <Mission />
-        <ContactPage />
+        <ContactForm />
         <ProjectPreview />
         <BlogPreview />
         <Team />

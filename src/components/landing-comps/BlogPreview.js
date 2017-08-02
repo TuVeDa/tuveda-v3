@@ -8,7 +8,10 @@ class BlogPreview extends Component {
 
   render() {
     return (
-      <p>BLOG PREVIEW</p>
+      <div className="std-land-sect" id='blog-preview'>
+        <h3 className='land-title'>BLOG PREVIEW</h3>
+      </div>
+
     )
   }
 }
