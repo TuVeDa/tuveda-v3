@@ -20,13 +20,12 @@
 
 .std-land-section {
   padding: 1em 0;
-  border: 2px dotted #000;
   text-align: center; }
 
 .std-land-sect {
-  height: 35em;
-  border: 2px dotted #000;
-  text-align: center; }
+  padding: 1em 0;
+  text-align: center;
+  height: 35em; }
 
 .land-title {
   margin: .5em 0 1em 0;
@@ -78,6 +77,21 @@
 
 #blog-preview {
   background-color: #D1D1D1; }
+  #blog-preview ul {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+.blog-pic {
+  width: 25em;
+  height: 25em;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em; }
+
+.blog-title {
+  font-size: 1.5em;
+  padding-top: 2.5em; }
 
 .team-title {
   font-size: 1.5em; }

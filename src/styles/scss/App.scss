@@ -52,16 +52,12 @@ $sub-title-font-size: 1.5em;
 
 .std-land-section {
   padding: 1em 0;
-  border: 2px dotted $black;
   text-align: center;
-
 }
-
 .std-land-sect {
-  height: 35em;
-  border: 2px dotted $black;
+  padding: 1em 0;
   text-align: center;
-
+  height: 35em;
 }
 
 .land-title {
@@ -138,6 +134,24 @@ $sub-title-font-size: 1.5em;
 
 #blog-preview {
   background-color: $light-grey;
+  ul {
+    font-size: $sub-title-font-size;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.blog-pic {
+  width: 25em;
+  height: 25em;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.blog-title {
+  font-size: $sub-title-font-size;
+  padding-top: 2.5em;
 }
 
 // TEAM ---------------------------
