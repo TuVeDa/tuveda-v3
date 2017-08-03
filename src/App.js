@@ -4,8 +4,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 
-// import './styles/App.scss';
-
 class App extends Component {
   // constructor(props) {
   //   super(props);

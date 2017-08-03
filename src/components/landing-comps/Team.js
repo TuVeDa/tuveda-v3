@@ -13,28 +13,28 @@ class Team extends Component{
 
         <div className='row'>
           <div className='teammate col-sm-3'>
-            <p className='team-title'>SUB-MISSION</p>
+            <p className='team-title'>TEAMMATE</p>
             <img className='team-pic' src='img/grey-placeholder.png' alt='team-1'/>
             <p className='team-desc'>
               Cupcake liquorice jujubes donut. I love fruitcake caramels cookie tootsie roll. Gummies jujubes jujubes. Soufflé sweet roll pudding lemon drops
             </p>
           </div>
           <div className='teammate col-sm-3'>
-            <p className='team-title'>SUB-MISSION</p>
+            <p className='team-title'>TEAMMATE</p>
             <img className='team-pic' src='img/grey-placeholder.png' alt='team-1'/>
             <p className='team-desc'>
               Cupcake liquorice jujubes donut. I love fruitcake caramels cookie tootsie roll. Gummies jujubes jujubes. Soufflé sweet roll pudding lemon drops
             </p>
           </div>
           <div className='teammate col-sm-3'>
-            <p className='team-title'>SUB-MISSION</p>
+            <p className='team-title'>TEAMMATE</p>
             <img className='team-pic' src='img/grey-placeholder.png' alt='team-1'/>
             <p className='team-desc'>
               Cupcake liquorice jujubes donut. I love fruitcake caramels cookie tootsie roll. Gummies jujubes jujubes. Soufflé sweet roll pudding lemon drops
             </p>
           </div>
           <div className='teammate col-sm-3'>
-            <p className='team-title'>SUB-MISSION</p>
+            <p className='team-title'>TEAMMATE</p>
             <img className='team-pic' src='img/grey-placeholder.png' alt='team-1'/>
             <p className='team-desc'>
               Cupcake liquorice jujubes donut. I love fruitcake caramels cookie tootsie roll. Gummies jujubes jujubes. Soufflé sweet roll pudding lemon drops
