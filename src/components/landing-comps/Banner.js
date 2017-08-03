@@ -8,7 +8,9 @@ class Banner extends Component {
 
   render() {
     return (
-      <p>BANNER</p>
+      <div className="std-land-sect" id="banner">
+        <h1>TUVEDA</h1>
+      </div>
     )
   }
 }

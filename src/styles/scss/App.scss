@@ -1,0 +1,171 @@
+// NOTES:
+// - Actual color scheme: https://coolors.co/1f7a8c-171d1c-f7f4f9-edb438-3f37dd
+// - em to px conversion ---> http://pxtoem.com/
+// - GREY color scheme: https://coolors.co/000000-3c3e44-696773-d1d1d1-fdfffc
+
+// VARIABLES --------------------
+
+// colors
+$black: #000;
+$white: #FFF;
+$dark-grey: #3C3E44;
+$medium-grey: #696773;
+$light-grey: #D1D1D1;
+
+
+//font sizes
+$sect-title-font-size: 1.825em;
+$std-font-size: 1em;
+$sub-title-font-size: 1.5em;
+// $sub-title-font-size: 1.125em;
+
+
+// WHOLE APP  --------------------
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.navbar {
+  background: $dark-grey;
+  a {
+    color: $white !important;
+  }
+  &.navbar-default{
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  background: $dark-grey;
+  color: $white;
+  text-align: center;
+}
+
+// LANDING PAGE ---------------------------
+
+.std-land-section {
+  padding: 1em 0;
+  text-align: center;
+}
+.std-land-sect {
+  padding: 1em 0;
+  text-align: center;
+  height: 35em;
+}
+
+.land-title {
+  margin: .5em 0 1em 0;
+  font-size: $sect-title-font-size;
+  color: $black;
+}
+
+// BANNER ---------------------------
+
+#banner {
+  background-color: $light-grey;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+  }
+}
+
+// MISSION ---------------------------
+
+.sub-mission-title {
+  font-size: $sub-title-font-size;
+}
+
+.sub-mission-pic {
+  width: 15em;
+  height: 15em;
+}
+
+.sub-mission-desc {
+  font-size: $std-font-size;
+  margin-top: 1em;
+}
+
+// CONTACT FORM ---------------------------
+
+#contact-form {
+  background-color: $light-grey;
+  form {
+    margin: 2em 0;
+  }
+  .input-name {
+    padding-right: 1em;
+    width: 5em;
+  }
+  .input {
+    width: 25em;
+  }
+}
+
+
+// PROJECT PREVIEW ---------------------------
+
+.project {
+  margin-top: 2em;
+}
+
+.project-title {
+  font-size: $sub-title-font-size;
+  margin-top: 1em;
+}
+
+.project-pic {
+  width: 20em;
+  height: 20em;
+}
+
+// BLOG PREVIEW ---------------------------
+
+#blog-preview {
+  background-color: $light-grey;
+  ul {
+    font-size: $sub-title-font-size;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.blog-pic {
+  width: 25em;
+  height: 25em;
+  padding-left: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.blog-title {
+  font-size: $sub-title-font-size;
+  padding-top: 2.5em;
+}
+
+// TEAM ---------------------------
+
+.team-title {
+  font-size: $sub-title-font-size;
+}
+
+.team-pic {
+  width: 15em;
+  height: 15em;
+}
+
+.team-desc {
+  font-size: $std-font-size;
+  margin: 1em 0;
+}

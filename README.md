@@ -128,10 +128,10 @@ my-app/
     index.html
     favicon.ico
   src/
-    App.css
+    App.scss
     App.js
     App.test.js
-    index.css
+    index.scss
     index.js
     logo.svg
 ```
@@ -1760,7 +1760,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
