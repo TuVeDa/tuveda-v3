@@ -12,15 +12,15 @@ class ContactForm extends Component {
         <h3 className='land-title'>CONTACT FORM</h3>
         <form>
           <div className="form-group form-inline row">
-            <label for="client-name" className="input-name">Name</label>
+            <label className="input-name">Name</label>
             <input type="email" className="form-control input" id="client-name" placeholder="Jordan Doe" />
           </div>
           <div className="form-group form-inline row">
-            <label for="client-email" className="input-name">Email</label>
+            <label className="input-name">Email</label>
             <input type="email" className="form-control input" id="client-email" placeholder="email@email.com" />
           </div>
           <div className="form-group form-inline row">
-            <label for="client-company" className="input-name">Company</label>
+            <label className="input-name">Company</label>
             <input type="password" className="form-control input" id="client-company" placeholder="Enterprise Inc." />
           </div>
           <div className="form-group">

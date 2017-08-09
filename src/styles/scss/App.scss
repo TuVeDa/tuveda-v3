@@ -3,22 +3,8 @@
 // - em to px conversion ---> http://pxtoem.com/
 // - GREY color scheme: https://coolors.co/000000-3c3e44-696773-d1d1d1-fdfffc
 
-// VARIABLES --------------------
-
-// colors
-$black: #000;
-$white: #FFF;
-$dark-grey: #3C3E44;
-$medium-grey: #696773;
-$light-grey: #D1D1D1;
-
-
-//font sizes
-$sect-title-font-size: 1.825em;
-$std-font-size: 1em;
-$sub-title-font-size: 1.5em;
-// $sub-title-font-size: 1.125em;
-
+@import 'Variables';
+@import 'Project';
 
 // WHOLE APP  --------------------
 
@@ -111,23 +97,6 @@ $sub-title-font-size: 1.5em;
   .input {
     width: 25em;
   }
-}
-
-
-// PROJECT PREVIEW ---------------------------
-
-.project {
-  margin-top: 2em;
-}
-
-.project-title {
-  font-size: $sub-title-font-size;
-  margin-top: 1em;
-}
-
-.project-pic {
-  width: 20em;
-  height: 20em;
 }
 
 // BLOG PREVIEW ---------------------------
