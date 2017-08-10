@@ -1,25 +1,13 @@
 @import 'Variables';
 
-.project-inactive {
-  margin-top: 2em;
-  display: none;
-}
-
-.project-active {
+.project {
   margin-top: 2em;
   display: block;
 }
 
-// TODO: put this back in play
-// .project {
-//   margin-top: 2em;
-//   .active {
-//     visibility: visible;
-//   }
-//   .inactive {
-//     visibility: hidden;
-//   }
-// }
+.projectRow-hidden{
+  display: none;
+}
 
 .project-title {
   font-size: $sub-title-font-size;
@@ -32,17 +20,25 @@
 }
 
 //-----DRAWER-------
-
-.drawerPic {
-  width: 15em;
-  height: 15em;
-}
-
-// TODO: implement proj-inactive type situation
 .drawerActive {
   display: block;
 }
 
 .drawerInactive {
   display: none;
+}
+
+.drawer-pic {
+  width: 20em;
+  height: 20em;
+}
+
+.drawer-title {
+  font-size: 1.825;
+  margin-top: 1em;
+  color: green;
+}
+
+.drawer-des {
+  font-size: 1.5;
 }

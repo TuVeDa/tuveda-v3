@@ -14,19 +14,17 @@ class ProjectTile extends Component {
 
   render() {
     return (
-      <div
-        className={this.state.active && !this.state.selected ?
-          'project-inactive col-sm-4' :
-          'project-active col-sm-4'
-        }>
+      <div className='project col-sm-4'
+        >
         <img
           id={this.state.id}
           className='project-pic'
-          src='img/grey-placeholder.png'
+          src={this.state.img}
           alt={this.state.id}
+          title={this.state.title}
           onClick={(e) => this.props.handleClick(e)}
         />
-        <p className='project-title'>{this.state.id}</p>
+        <p className='project-title'>{this.state.title}</p>
       </div>
     )
   }

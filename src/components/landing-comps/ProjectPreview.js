@@ -8,6 +8,7 @@ class ProjectPreview extends Component {
     this.state = {
       active: false,
       selection: '',
+      title: ''
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -16,21 +17,18 @@ class ProjectPreview extends Component {
 
   handleClick(e) {
     const id = e.target.id;
+    const title = e.target.title;
 
-    if (this.state.active) {
-      this.setState({selection: id})
-      console.log('projectID', id)
-    } else {
-      console.log("active: TRUE & projectID:", id)
-      this.setState({
-        active: true,
-        selection: id,
-      })
-    }
+    console.log("ACTIVE & projectID:", id)
+    this.setState({
+      active: true,
+      selection: id,
+      title: title
+    })
   }
 
   shutDrawer() {
-    console.log("DRAWER SHUT & active: FALSE")
+    console.log("DRAWER SHUT & INACTIVE")
 
     this.setState({
       active: false
@@ -40,32 +38,40 @@ class ProjectPreview extends Component {
   render() {
     return (
       <div className="std-land-section">
-        <h3 className='land-title'>PROJECTS</h3>
 
-        <div className='row'>
+        <div className={this.state.active ? 'projectRow-hidden' : 'row'}>
+          <h3 className='land-title'>PROJECTS</h3>
+
           <ProjectTile
             id='0_project'
             active={this.state.active}
-            selected={this.state.selection === '0_project'}
             handleClick={this.handleClick}
+            title='Project 0'
+            img='img/0_project.png'
           />
           <ProjectTile
             id='1_project'
             active={this.state.active}
-            selected={this.state.selection === '1_project'}
             handleClick={this.handleClick}
+            title='Project 1'
+            img='img/1_project.png'
           />
           <ProjectTile
             id='2_project'
             active={this.state.active}
-            selected={this.state.selection === '2_project'}
             handleClick={this.handleClick}
+            title='Project 2'
+            img='img/2_project.png'
           />
         </div>
-          <Drawer
-            active={this.state.active}
-            shutDrawer={this.shutDrawer}
-          />
+
+        <Drawer
+          active={this.state.active}
+          shutDrawer={this.shutDrawer}
+          img={'img/'+ this.state.selection + '.png'}
+          title={this.state.title}
+          selection={this.state.selection}
+        />
       </div>
     )
   }

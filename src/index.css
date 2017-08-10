@@ -1,10 +1,9 @@
-.project-inactive {
-  margin-top: 2em;
-  display: none; }
-
-.project-active {
+.project {
   margin-top: 2em;
   display: block; }
+
+.projectRow-hidden {
+  display: none; }
 
 .project-title {
   font-size: 1.5em;
@@ -13,10 +12,6 @@
 .project-pic {
   width: 20em;
   height: 20em; }
-
-.drawerPic {
-  width: 15em;
-  height: 15em; }
 
 .drawerActive {
   display: block; }
