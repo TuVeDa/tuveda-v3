@@ -16,12 +16,12 @@ class ProjectPreview extends Component {
 
   handleClick(e) {
     const id = e.target.id;
-    console.log('projectID', id)
 
     if (this.state.active) {
       this.setState({selection: id})
+      console.log('projectID', id)
     } else {
-      console.log("active: TRUE")
+      console.log("active: TRUE & projectID:", id)
       this.setState({
         active: true,
         selection: id,
@@ -30,8 +30,7 @@ class ProjectPreview extends Component {
   }
 
   shutDrawer() {
-    console.log("DRAWER SHUT")
-    console.log("active: FALSE")
+    console.log("DRAWER SHUT & active: FALSE")
 
     this.setState({
       active: false
