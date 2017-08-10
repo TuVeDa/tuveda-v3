@@ -1,29 +1,39 @@
 import React, { Component } from 'react';
+import ProjectTile from './proj-comps/ProjectTile';
+import Drawer from './proj-comps/Drawer';
 
 class ProjectPreview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: false,
-      selectedProj: '',
+      active: false,
+      selection: '',
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.shutDrawer = this.shutDrawer.bind(this);
   };
 
   handleClick(e) {
     const id = e.target.id;
     console.log('projectID', id)
 
-    if (this.state.selected) {
-      this.setState({selectedProj: id})
+    if (this.state.active) {
+      this.setState({selection: id})
     } else {
-      console.log("selected: TRUE")
+      console.log("active: TRUE")
       this.setState({
-        selected: true,
-        selectedProj: id,
+        active: true,
+        selection: id,
       })
     }
+  }
+
+  shutDrawer() {
+    console.log("DRAWER SHUT")
+    this.setState({
+      active: false
+    })
   }
 
   render() {
@@ -32,36 +42,29 @@ class ProjectPreview extends Component {
         <h3 className='land-title'>PROJECTS</h3>
 
         <div className='row'>
-          <div className='project col-sm-4'>
-            <img
-              id='0_project'
-              className='project-pic'
-              src='img/grey-placeholder.png'
-              alt='project-1'
-              onClick={(e) => this.handleClick(e)}/>
-            <p className='project-title'>PROJECT</p>
-          </div>
-          <div className='project col-sm-4'>
-            <img
-              id='1_project'
-              className='project-pic'
-              src='img/grey-placeholder.png'
-              alt='project-2'
-              onClick={(e) => this.handleClick(e)}
-            />
-            <p className='project-title'>PROJECT</p>
-          </div>
-          <div className='project col-sm-4'>
-            <img
-              id='2_project'
-              className='project-pic'
-              src='img/grey-placeholder.png'
-              alt='project-3'
-              onClick={(e) => this.handleClick(e)}
-            />
-            <p className='project-title'>PROJECT</p>
-          </div>
+          <ProjectTile
+            id='0_project'
+            active={this.state.active}
+            selected={this.state.selection === '0_project'}
+            handleClick={this.handleClick}
+          />
+          <ProjectTile
+            id='1_project'
+            active={this.state.active}
+            selected={this.state.selection === '1_project'}
+            handleClick={this.handleClick}
+          />
+          <ProjectTile
+            id='2_project'
+            active={this.state.active}
+            selected={this.state.selection === '2_project'}
+            handleClick={this.handleClick}
+          />
         </div>
+          <Drawer
+            active={this.state.active}
+            shutDrawer={this.shutDrawer}
+          />
       </div>
     )
   }

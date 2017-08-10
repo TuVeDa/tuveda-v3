@@ -1,8 +1,24 @@
 @import 'Variables';
 
-.project {
+.project-inactive {
   margin-top: 2em;
+  visibility: hidden;
 }
+
+.project-active {
+  margin-top: 2em;
+  // visibility: visible;
+}
+
+// .project {
+//   margin-top: 2em;
+//   .active {
+//     visibility: visible;
+//   }
+//   .inactive {
+//     visibility: hidden;
+//   }
+// }
 
 .project-title {
   font-size: $sub-title-font-size;
@@ -12,4 +28,19 @@
 .project-pic {
   width: 20em;
   height: 20em;
+}
+
+//-----DRAWER-------
+
+.drawer-pic {
+  width: 15em;
+  height: 15em;
+}
+
+.drawerActive {
+  display: block !important;
+}
+
+.drawerInactive {
+  display: none;
 }
