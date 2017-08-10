@@ -2,12 +2,12 @@
 
 .project-inactive {
   margin-top: 2em;
-  visibility: hidden;
+  display: none;
 }
 
 .project-active {
   margin-top: 2em;
-  // visibility: visible;
+  display: block;
 }
 
 // .project {
@@ -32,13 +32,13 @@
 
 //-----DRAWER-------
 
-.drawer-pic {
+.drawerPic {
   width: 15em;
   height: 15em;
 }
 
 .drawerActive {
-  display: block !important;
+  display: block;
 }
 
 .drawerInactive {

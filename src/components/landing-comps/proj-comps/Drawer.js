@@ -15,7 +15,7 @@ class Drawer extends Component {
 
   render() {
     return (
-      <div className={this.state.active ? 'drawerActive' : 'drawerInactive'}>
+      <span className={this.state.active ? 'drawerActive' : 'drawerInactive'}>
         <div className='row '>
           <img
             className='project-pic col-sm-4'
@@ -41,7 +41,7 @@ class Drawer extends Component {
           </div>
 
         </div>
-      </div>
+      </span>
     )
   }
 }

@@ -26,7 +26,7 @@ class ProjectTile extends Component {
           alt={this.state.id}
           onClick={(e) => this.props.handleClick(e)}
         />
-        <p className='project-title'>PROJECT</p>
+        <p className='project-title'>{this.state.id}</p>
       </div>
     )
   }

@@ -1,8 +1,10 @@
 .project-inactive {
-  margin-top: 2em; }
+  margin-top: 2em;
+  display: none; }
 
 .project-active {
-  margin-top: 2em; }
+  margin-top: 2em;
+  display: block; }
 
 .project-title {
   font-size: 1.5em;
@@ -11,6 +13,16 @@
 .project-pic {
   width: 20em;
   height: 20em; }
+
+.drawerPic {
+  width: 15em;
+  height: 15em; }
+
+.drawerActive {
+  display: block; }
+
+.drawerInactive {
+  display: none; }
 
 .App {
   min-height: 100vh;

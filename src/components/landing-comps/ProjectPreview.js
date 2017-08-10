@@ -31,6 +31,8 @@ class ProjectPreview extends Component {
 
   shutDrawer() {
     console.log("DRAWER SHUT")
+    console.log("active: FALSE")
+
     this.setState({
       active: false
     })
