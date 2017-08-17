@@ -7,6 +7,7 @@ class ProjectPreview extends Component {
   // };
 
   render() {
+    
     return (
       <div className="std-land-section">
         <h3 className='land-title'>PROJECTS</h3>
