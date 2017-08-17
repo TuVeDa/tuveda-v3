@@ -19,6 +19,18 @@
 .drawerInactive {
   display: none; }
 
+.drawer-pic {
+  width: 20em;
+  height: 20em; }
+
+.drawer-title {
+  font-size: 1.825;
+  margin-top: 1em;
+  color: green; }
+
+.drawer-des {
+  font-size: 1.5; }
+
 .App {
   min-height: 100vh;
   display: flex;
